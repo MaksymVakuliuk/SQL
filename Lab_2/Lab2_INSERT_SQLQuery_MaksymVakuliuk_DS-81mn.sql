@@ -3,9 +3,9 @@ USE DB_Books
 INSERT INTO Authors
 (Code_author, Name_authors, Birthday)
 VALUES
-('1','Джоан Роулинг','31.07.1965'),
-('2','Оскар Уайльд','16.10.1854'),
-('3','Кетиль Бьернстад','25.08.1652')
+('1','Джоан Роулинг','1965-07-30'),
+('2','Оскар Уайльд','1854-10-16'),
+('3','Кетиль Бьернстад','1852-08-25')
 
 INSERT INTO Publishing_house
 (Code_publish, Publish, City)
@@ -33,9 +33,13 @@ VALUES
 INSERT INTO Deliveries
 (Code_delivery, Name_delivery, Name_company, Address, Phone, INN)
 VALUES
-('1', 'Glovo', 'Glovo incorporate', 'Kiev', '380938633054', '5454545454')
+('1', 'Glovo', 'Glovo incorporate', 'Kiev', '848554848', '5454545454'),
+('2', 'Yandex', 'Yandex group', 'Moaskow', '4865247', '545454454'),
+('3', 'New Post', 'OOO "New Post"', 'Kiev', '848554848', '545475454')
+
 
 INSERT INTO Purchases
 (Code_book, Date_order, Code_delivery, Type_purchase, Cost, Amount, Code_purchase)
 VALUES
-('', '', '', '', '', '', '')
+('1', '2018-10-13', '3', '1', '135', '1', '23045'),
+('3', '2019-10-21', '1', '0', '202', '2', '45078')

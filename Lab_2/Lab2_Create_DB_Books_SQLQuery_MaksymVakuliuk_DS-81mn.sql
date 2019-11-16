@@ -46,7 +46,7 @@ CREATE TABLE Deliveries
 	Code_delivery Int PRIMARY KEY,
 	Name_delivery Char(30),
 	Name_company Char(20),
-	Address VarChar(100),
+	Address Char(100),
 	Phone BigInt, --why do we use BigInt?
 	INN Char(13)
 )
@@ -54,10 +54,12 @@ CREATE TABLE Deliveries
 CREATE TABLE Purchases
 (
 	Code_book Int FOREIGN KEY REFERENCES Books(Code_book),
-	Date_order DateTime,
+	Date_order Date,
 	Code_delivery Int FOREIGN KEY REFERENCES Deliveries(Code_delivery),
 	Type_purchase Bit,
 	Cost Money,--(float)
 	Amount Int,
 	Code_purchase Int
 )
+
+

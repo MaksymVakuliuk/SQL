@@ -1,4 +1,4 @@
-CREATE DATABASE Gifts_for_children_of_employees
+ CREATE DATABASE Gifts_for_children_of_employees
 ON
 (
 	NAME = 'Gifts_for_children_of_employees',
