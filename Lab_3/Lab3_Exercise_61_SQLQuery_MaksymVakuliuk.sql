@@ -8,8 +8,8 @@ DECLARE @b float
 DECLARE @x float
 DECLARE @y float
 
-SET @a  = 10
-SET @b =  2
+SET @a = 10
+SET @b = 2
 SET @x = 60
 
 SET @y = (@a*COS(@x))/(POWER(@a,2)-POWER(@b,2))*SIN(@x) 
