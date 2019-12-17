@@ -1,0 +1,12 @@
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\bin\Debug\WindowsForms.exe.config
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\bin\Debug\WindowsForms.exe
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\bin\Debug\WindowsForms.pdb
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.csprojAssemblyReference.cache
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.FormChildrenOfEmployers.resources
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.FormEmployeers.resources
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.FormGifts.resources
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.Properties.Resources.resources
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.csproj.GenerateResource.cache
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.exe
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.pdb
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.Form_Gifts_for_children_of_employeers_DB.resources
