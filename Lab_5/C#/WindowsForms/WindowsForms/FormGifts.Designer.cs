@@ -55,12 +55,15 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.childrenOfEmployeersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.childrenOfEmployeersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.childrenOfEmployeersTableAdapter = new WindowsForms.Gifts_for_children_of_employeesDataSetTableAdapters.ChildrenOfEmployeersTableAdapter();
+            this.Drop_filter_button = new System.Windows.Forms.Button();
+            this.Filter_by_Gift_value_button = new System.Windows.Forms.Button();
+            this.Filter_by_Date_of_issue_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.giftsBindingSource)).BeginInit();
@@ -95,7 +98,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(800, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(613, 31);
             this.bindingNavigator1.TabIndex = 0;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -105,7 +108,7 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // giftsBindingSource
@@ -121,7 +124,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -131,7 +134,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -140,7 +143,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -149,13 +152,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -170,7 +173,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -178,7 +181,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -187,18 +190,20 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -213,7 +218,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(553, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(589, 150);
             this.dataGridView1.TabIndex = 1;
             // 
             // childIDDataGridViewTextBoxColumn
@@ -222,6 +227,7 @@
             this.childIDDataGridViewTextBoxColumn.HeaderText = "Child_ID";
             this.childIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.childIDDataGridViewTextBoxColumn.Name = "childIDDataGridViewTextBoxColumn";
+            this.childIDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // giftvalueDataGridViewTextBoxColumn
             // 
@@ -229,6 +235,7 @@
             this.giftvalueDataGridViewTextBoxColumn.HeaderText = "Gift_value";
             this.giftvalueDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.giftvalueDataGridViewTextBoxColumn.Name = "giftvalueDataGridViewTextBoxColumn";
+            this.giftvalueDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // dateofissueDataGridViewTextBoxColumn
             // 
@@ -236,6 +243,7 @@
             this.dateofissueDataGridViewTextBoxColumn.HeaderText = "Date_of_issue";
             this.dateofissueDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.dateofissueDataGridViewTextBoxColumn.Name = "dateofissueDataGridViewTextBoxColumn";
+            this.dateofissueDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // numberofissueDataGridViewTextBoxColumn
             // 
@@ -243,6 +251,7 @@
             this.numberofissueDataGridViewTextBoxColumn.HeaderText = "Number_of_issue";
             this.numberofissueDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.numberofissueDataGridViewTextBoxColumn.Name = "numberofissueDataGridViewTextBoxColumn";
+            this.numberofissueDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // giftsTableAdapter
             // 
@@ -257,6 +266,7 @@
             this.button1.Text = "Update";
             this.button1.UseCompatibleTextRendering = true;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Update_Button_Click);
             // 
             // textBox3
             // 
@@ -294,6 +304,11 @@
             this.comboBox1.TabIndex = 15;
             this.comboBox1.ValueMember = "Child_ID";
             // 
+            // childrenOfEmployeersBindingSource
+            // 
+            this.childrenOfEmployeersBindingSource.DataMember = "ChildrenOfEmployeers";
+            this.childrenOfEmployeersBindingSource.DataSource = this.gifts_for_children_of_employeesDataSet;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -330,20 +345,51 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Child ID";
             // 
-            // childrenOfEmployeersBindingSource
-            // 
-            this.childrenOfEmployeersBindingSource.DataMember = "ChildrenOfEmployeers";
-            this.childrenOfEmployeersBindingSource.DataSource = this.gifts_for_children_of_employeesDataSet;
-            // 
             // childrenOfEmployeersTableAdapter
             // 
             this.childrenOfEmployeersTableAdapter.ClearBeforeFill = true;
+            // 
+            // Drop_filter_button
+            // 
+            this.Drop_filter_button.Location = new System.Drawing.Point(406, 270);
+            this.Drop_filter_button.Name = "Drop_filter_button";
+            this.Drop_filter_button.Size = new System.Drawing.Size(195, 23);
+            this.Drop_filter_button.TabIndex = 26;
+            this.Drop_filter_button.Text = "Drop filter";
+            this.Drop_filter_button.UseCompatibleTextRendering = true;
+            this.Drop_filter_button.UseVisualStyleBackColor = true;
+            this.Drop_filter_button.Click += new System.EventHandler(this.Drop_filter_button_Click);
+            // 
+            // Filter_by_Gift_value_button
+            // 
+            this.Filter_by_Gift_value_button.Location = new System.Drawing.Point(406, 210);
+            this.Filter_by_Gift_value_button.Name = "Filter_by_Gift_value_button";
+            this.Filter_by_Gift_value_button.Size = new System.Drawing.Size(195, 23);
+            this.Filter_by_Gift_value_button.TabIndex = 24;
+            this.Filter_by_Gift_value_button.Text = "Filter by Gift value";
+            this.Filter_by_Gift_value_button.UseCompatibleTextRendering = true;
+            this.Filter_by_Gift_value_button.UseVisualStyleBackColor = true;
+            this.Filter_by_Gift_value_button.Click += new System.EventHandler(this.Filter_by_Gift_value_button_Click);
+            // 
+            // Filter_by_Date_of_issue_button
+            // 
+            this.Filter_by_Date_of_issue_button.Location = new System.Drawing.Point(406, 239);
+            this.Filter_by_Date_of_issue_button.Name = "Filter_by_Date_of_issue_button";
+            this.Filter_by_Date_of_issue_button.Size = new System.Drawing.Size(195, 23);
+            this.Filter_by_Date_of_issue_button.TabIndex = 23;
+            this.Filter_by_Date_of_issue_button.Text = "Filter by Data of issue";
+            this.Filter_by_Date_of_issue_button.UseCompatibleTextRendering = true;
+            this.Filter_by_Date_of_issue_button.UseVisualStyleBackColor = true;
+            this.Filter_by_Date_of_issue_button.Click += new System.EventHandler(this.Filter_by_Date_of_issue_button_Click);
             // 
             // FormGifts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(613, 352);
+            this.Controls.Add(this.Drop_filter_button);
+            this.Controls.Add(this.Filter_by_Gift_value_button);
+            this.Controls.Add(this.Filter_by_Date_of_issue_button);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -356,7 +402,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bindingNavigator1);
             this.Name = "FormGifts";
-            this.Text = "Gifts";
+            this.Text = "v";
             this.Load += new System.EventHandler(this.FormGifts_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
@@ -403,5 +449,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingSource childrenOfEmployeersBindingSource;
         private Gifts_for_children_of_employeesDataSetTableAdapters.ChildrenOfEmployeersTableAdapter childrenOfEmployeersTableAdapter;
+        private System.Windows.Forms.Button Drop_filter_button;
+        private System.Windows.Forms.Button Filter_by_Gift_value_button;
+        private System.Windows.Forms.Button Filter_by_Date_of_issue_button;
     }
 }

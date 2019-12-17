@@ -68,6 +68,13 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.Filter_by_Department_button = new System.Windows.Forms.Button();
+            this.Filter_by_last_name_button = new System.Windows.Forms.Button();
+            this.Filter_by_First_Name_button = new System.Windows.Forms.Button();
+            this.Filter_by_Petronymic_button = new System.Windows.Forms.Button();
+            this.Filter_by_Position_button = new System.Windows.Forms.Button();
+            this.Filter_by_Hirring_date_button = new System.Windows.Forms.Button();
+            this.Drop_filter_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gifts_for_children_of_employeesDataSet)).BeginInit();
@@ -79,6 +86,8 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -195,7 +204,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1159, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(953, 31);
             this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -205,7 +214,7 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
@@ -251,6 +260,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -292,7 +302,6 @@
             this.label1.Size = new System.Drawing.Size(87, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Employee ID";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -302,7 +311,6 @@
             this.label2.Size = new System.Drawing.Size(76, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Last Name";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // label3
             // 
@@ -312,7 +320,6 @@
             this.label3.Size = new System.Drawing.Size(76, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "First Name";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -349,7 +356,6 @@
             this.label7.Size = new System.Drawing.Size(77, 17);
             this.label7.TabIndex = 8;
             this.label7.Text = "Hiring date";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // textBox1
             // 
@@ -420,11 +426,95 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Update_Button_Click);
             // 
+            // Filter_by_Department_button
+            // 
+            this.Filter_by_Department_button.Location = new System.Drawing.Point(505, 329);
+            this.Filter_by_Department_button.Name = "Filter_by_Department_button";
+            this.Filter_by_Department_button.Size = new System.Drawing.Size(195, 23);
+            this.Filter_by_Department_button.TabIndex = 16;
+            this.Filter_by_Department_button.Text = "Filter by Department";
+            this.Filter_by_Department_button.UseCompatibleTextRendering = true;
+            this.Filter_by_Department_button.UseVisualStyleBackColor = true;
+            this.Filter_by_Department_button.Click += new System.EventHandler(this.Filter_by_Department_button_Click);
+            // 
+            // Filter_by_last_name_button
+            // 
+            this.Filter_by_last_name_button.Location = new System.Drawing.Point(505, 210);
+            this.Filter_by_last_name_button.Name = "Filter_by_last_name_button";
+            this.Filter_by_last_name_button.Size = new System.Drawing.Size(195, 23);
+            this.Filter_by_last_name_button.TabIndex = 17;
+            this.Filter_by_last_name_button.Text = "Filter by last name";
+            this.Filter_by_last_name_button.UseCompatibleTextRendering = true;
+            this.Filter_by_last_name_button.UseVisualStyleBackColor = true;
+            this.Filter_by_last_name_button.Click += new System.EventHandler(this.Filter_by_last_name_button_Click);
+            // 
+            // Filter_by_First_Name_button
+            // 
+            this.Filter_by_First_Name_button.Location = new System.Drawing.Point(505, 240);
+            this.Filter_by_First_Name_button.Name = "Filter_by_First_Name_button";
+            this.Filter_by_First_Name_button.Size = new System.Drawing.Size(195, 23);
+            this.Filter_by_First_Name_button.TabIndex = 18;
+            this.Filter_by_First_Name_button.Text = "Filter by First Name";
+            this.Filter_by_First_Name_button.UseCompatibleTextRendering = true;
+            this.Filter_by_First_Name_button.UseVisualStyleBackColor = true;
+            this.Filter_by_First_Name_button.Click += new System.EventHandler(this.Filter_by_First_Name_button_Click);
+            // 
+            // Filter_by_Petronymic_button
+            // 
+            this.Filter_by_Petronymic_button.Location = new System.Drawing.Point(505, 270);
+            this.Filter_by_Petronymic_button.Name = "Filter_by_Petronymic_button";
+            this.Filter_by_Petronymic_button.Size = new System.Drawing.Size(195, 23);
+            this.Filter_by_Petronymic_button.TabIndex = 19;
+            this.Filter_by_Petronymic_button.Text = "Filter by Petronymic";
+            this.Filter_by_Petronymic_button.UseCompatibleTextRendering = true;
+            this.Filter_by_Petronymic_button.UseVisualStyleBackColor = true;
+            this.Filter_by_Petronymic_button.Click += new System.EventHandler(this.Filter_by_Petronymic_button_Click);
+            // 
+            // Filter_by_Position_button
+            // 
+            this.Filter_by_Position_button.Location = new System.Drawing.Point(505, 300);
+            this.Filter_by_Position_button.Name = "Filter_by_Position_button";
+            this.Filter_by_Position_button.Size = new System.Drawing.Size(195, 23);
+            this.Filter_by_Position_button.TabIndex = 20;
+            this.Filter_by_Position_button.Text = "Filter by Position";
+            this.Filter_by_Position_button.UseCompatibleTextRendering = true;
+            this.Filter_by_Position_button.UseVisualStyleBackColor = true;
+            this.Filter_by_Position_button.Click += new System.EventHandler(this.Filter_by_Position_button_Click);
+            // 
+            // Filter_by_Hirring_date_button
+            // 
+            this.Filter_by_Hirring_date_button.Location = new System.Drawing.Point(505, 360);
+            this.Filter_by_Hirring_date_button.Name = "Filter_by_Hirring_date_button";
+            this.Filter_by_Hirring_date_button.Size = new System.Drawing.Size(195, 23);
+            this.Filter_by_Hirring_date_button.TabIndex = 21;
+            this.Filter_by_Hirring_date_button.Text = "Filter by Hirring date";
+            this.Filter_by_Hirring_date_button.UseCompatibleTextRendering = true;
+            this.Filter_by_Hirring_date_button.UseVisualStyleBackColor = true;
+            this.Filter_by_Hirring_date_button.Click += new System.EventHandler(this.Filter_by_Hirring_date_button_Click);
+            // 
+            // Drop_filter_button
+            // 
+            this.Drop_filter_button.Location = new System.Drawing.Point(505, 390);
+            this.Drop_filter_button.Name = "Drop_filter_button";
+            this.Drop_filter_button.Size = new System.Drawing.Size(195, 23);
+            this.Drop_filter_button.TabIndex = 22;
+            this.Drop_filter_button.Text = "Drop filter";
+            this.Drop_filter_button.UseCompatibleTextRendering = true;
+            this.Drop_filter_button.UseVisualStyleBackColor = true;
+            this.Drop_filter_button.Click += new System.EventHandler(this.Drop_filter_button_Click);
+            // 
             // FormEmployeers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1159, 450);
+            this.ClientSize = new System.Drawing.Size(953, 450);
+            this.Controls.Add(this.Drop_filter_button);
+            this.Controls.Add(this.Filter_by_Hirring_date_button);
+            this.Controls.Add(this.Filter_by_Position_button);
+            this.Controls.Add(this.Filter_by_Petronymic_button);
+            this.Controls.Add(this.Filter_by_First_Name_button);
+            this.Controls.Add(this.Filter_by_last_name_button);
+            this.Controls.Add(this.Filter_by_Department_button);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
@@ -496,5 +586,12 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Filter_by_Department_button;
+        private System.Windows.Forms.Button Filter_by_last_name_button;
+        private System.Windows.Forms.Button Filter_by_First_Name_button;
+        private System.Windows.Forms.Button Filter_by_Petronymic_button;
+        private System.Windows.Forms.Button Filter_by_Position_button;
+        private System.Windows.Forms.Button Filter_by_Hirring_date_button;
+        private System.Windows.Forms.Button Drop_filter_button;
     }
 }

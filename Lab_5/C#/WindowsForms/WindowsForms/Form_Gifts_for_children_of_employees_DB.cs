@@ -51,7 +51,14 @@ namespace WindowsForms
             formGifts.Show();
         }
 
-       
+        private void employeers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
+
+        private void childrenOfEmployeers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -80,6 +80,8 @@
             this.childrenOfEmployeers.AccessibleName = "";
             this.childrenOfEmployeers.AllowUserToAddRows = false;
             this.childrenOfEmployeers.AllowUserToDeleteRows = false;
+            this.childrenOfEmployeers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.childrenOfEmployeers.AutoGenerateColumns = false;
             this.childrenOfEmployeers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.childrenOfEmployeers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -96,6 +98,7 @@
             this.childrenOfEmployeers.RowTemplate.Height = 24;
             this.childrenOfEmployeers.Size = new System.Drawing.Size(936, 150);
             this.childrenOfEmployeers.TabIndex = 0;
+            this.childrenOfEmployeers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.childrenOfEmployeers_CellContentClick);
             // 
             // employeeIDDataGridViewTextBoxColumn
             // 
@@ -148,6 +151,8 @@
             this.employeers.AccessibleName = "employeers";
             this.employeers.AllowUserToAddRows = false;
             this.employeers.AllowUserToDeleteRows = false;
+            this.employeers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.employeers.AutoGenerateColumns = false;
             this.employeers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.employeers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -167,6 +172,7 @@
             this.employeers.RowTemplate.Height = 24;
             this.employeers.Size = new System.Drawing.Size(936, 160);
             this.employeers.TabIndex = 1;
+            this.employeers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.employeers_CellContentClick);
             // 
             // employeeIDDataGridViewTextBoxColumn1
             // 
@@ -238,6 +244,8 @@
             this.gifts.AccessibleName = "gifts";
             this.gifts.AllowUserToAddRows = false;
             this.gifts.AllowUserToDeleteRows = false;
+            this.gifts.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gifts.AutoGenerateColumns = false;
             this.gifts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gifts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -303,7 +311,7 @@
             this.работаСТаблицамиToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1432, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(966, 30);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -314,7 +322,7 @@
             this.childrenOfEmployeersToolStripMenuItem,
             this.giftsToolStripMenuItem});
             this.работаСТаблицамиToolStripMenuItem.Name = "работаСТаблицамиToolStripMenuItem";
-            this.работаСТаблицамиToolStripMenuItem.Size = new System.Drawing.Size(163, 24);
+            this.работаСТаблицамиToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.работаСТаблицамиToolStripMenuItem.Text = "Работа с таблицами";
             // 
             // employeersToolStripMenuItem
@@ -357,7 +365,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1432, 612);
+            this.ClientSize = new System.Drawing.Size(966, 554);
             this.Controls.Add(this.gifts);
             this.Controls.Add(this.employeers);
             this.Controls.Add(this.childrenOfEmployeers);
@@ -366,6 +374,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form_Gifts_for_children_of_employeers_DB";
             this.Text = "Gifts_for_children_of_employeers_DB";
+            this.Activated += new System.EventHandler(this.FormGifts_for_children_of_employeers_Load);
             this.Load += new System.EventHandler(this.FormGifts_for_children_of_employeers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.childrenOfEmployeers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.childrenOfEmployeersBindingSource)).EndInit();
@@ -389,7 +398,6 @@
         private System.Windows.Forms.DataGridView childrenOfEmployeers;
         private Gifts_for_children_of_employeesDataSet gifts_for_children_of_employeesDataSet;
         private System.Windows.Forms.BindingSource childrenOfEmployeersBindingSource;
-        private Gifts_for_children_of_employeesDataSetTableAdapters.ChildrenOfEmployeersTableAdapter childrenOfEmployeersTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn employeeIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateofbirthDataGridViewTextBoxColumn;
@@ -419,6 +427,7 @@
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.IO.FileSystemWatcher fileSystemWatcher2;
         private System.IO.FileSystemWatcher fileSystemWatcher3;
+        private Gifts_for_children_of_employeesDataSetTableAdapters.ChildrenOfEmployeersTableAdapter childrenOfEmployeersTableAdapter;
     }
 }
 

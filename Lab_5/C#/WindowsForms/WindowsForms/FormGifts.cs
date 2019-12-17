@@ -19,12 +19,30 @@ namespace WindowsForms
 
         private void FormGifts_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'gifts_for_children_of_employeesDataSet.ChildrenOfEmployeers' table. You can move, or remove it, as needed.
-            this.childrenOfEmployeersTableAdapter.Fill(this.gifts_for_children_of_employeesDataSet.ChildrenOfEmployeers);
             // TODO: This line of code loads data into the 'gifts_for_children_of_employeesDataSet.Gifts' table. You can move, or remove it, as needed.
             this.giftsTableAdapter.Fill(this.gifts_for_children_of_employeesDataSet.Gifts);
+        }
+
+        private void Update_Button_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.giftsBindingSource.EndEdit();
+            this.giftsTableAdapter.Update(this.gifts_for_children_of_employeesDataSet.Gifts);
+        }
+
+        private void Filter_by_Gift_value_button_Click(object sender, EventArgs e)
+        {
 
         }
 
+        private void Filter_by_Date_of_issue_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Drop_filter_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
