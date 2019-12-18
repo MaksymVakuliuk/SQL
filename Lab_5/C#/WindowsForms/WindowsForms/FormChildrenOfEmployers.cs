@@ -33,17 +33,19 @@ namespace WindowsForms
 
         private void Filter_by_First_Name_button_Click(object sender, EventArgs e)
         {
-
+            int dd = dataGridView1.CurrentCell.RowIndex;
+            childrenOfEmployeersBindingSource.Filter = " FirstName = '" + dataGridView1[1, dd].Value + "'";
         }
 
         private void Filter_by_Date_of_birth_button_Click(object sender, EventArgs e)
         {
-
+            int dd = dataGridView1.CurrentCell.RowIndex;
+            childrenOfEmployeersBindingSource.Filter = " Date_of_birth = '" + dataGridView1[2, dd].Value + "'";
         }
 
         private void Drop_filter_button_Click(object sender, EventArgs e)
         {
-
+            childrenOfEmployeersBindingSource.Filter = "";
         }
     }
 }
