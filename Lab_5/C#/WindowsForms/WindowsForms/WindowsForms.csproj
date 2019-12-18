@@ -70,11 +70,29 @@
     <Compile Include="FormEmployeers.Designer.cs">
       <DependentUpon>FormEmployeers.cs</DependentUpon>
     </Compile>
-    <Compile Include="procedure_employeers_with_children.cs">
+    <Compile Include="Form_procedure_children_with_gift.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="procedure_employeers_with_children.Designer.cs">
-      <DependentUpon>procedure_employeers_with_children.cs</DependentUpon>
+    <Compile Include="Form_procedure_children_with_gift.Designer.cs">
+      <DependentUpon>Form_procedure_children_with_gift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_procedure_employeers_with_children.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_procedure_employeers_with_children.Designer.cs">
+      <DependentUpon>Form_procedure_employeers_with_children.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_procedure_employeers_with_edult_children.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_procedure_employeers_with_edult_children.Designer.cs">
+      <DependentUpon>Form_procedure_employeers_with_edult_children.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_procedure_gifts_value_more.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_procedure_gifts_value_more.Designer.cs">
+      <DependentUpon>Form_procedure_gifts_value_more.cs</DependentUpon>
     </Compile>
     <Compile Include="Gifts_for_children_of_employeesDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -95,8 +113,17 @@
     <EmbeddedResource Include="Form_Gifts_for_children_of_employees_DB.resx">
       <DependentUpon>Form_Gifts_for_children_of_employees_DB.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="procedure_employeers_with_children.resx">
-      <DependentUpon>procedure_employeers_with_children.cs</DependentUpon>
+    <EmbeddedResource Include="Form_procedure_children_with_gift.resx">
+      <DependentUpon>Form_procedure_children_with_gift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_procedure_employeers_with_children.resx">
+      <DependentUpon>Form_procedure_employeers_with_children.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_procedure_employeers_with_edult_children.resx">
+      <DependentUpon>Form_procedure_employeers_with_edult_children.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_procedure_gifts_value_more.resx">
+      <DependentUpon>Form_procedure_gifts_value_more.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

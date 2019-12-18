@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsForms
@@ -48,8 +41,27 @@ namespace WindowsForms
 
         private void employeersWithChildrenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            procedure_employeers_with_children procedure_Employeers_With_Children = new procedure_employeers_with_children();
-            procedure_Employeers_With_Children.Show();
+            Form_procedure_employeers_with_children form_procedure_employeers_with_children = new Form_procedure_employeers_with_children();
+            form_procedure_employeers_with_children.Show();
         }
+
+        private void childsWithGiftsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_procedure_children_with_gift form_Procedure_Children_With_Gift = new Form_procedure_children_with_gift();
+            form_Procedure_Children_With_Gift.Show();
+        }
+
+        private void employeersWithAdultChildrenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_procedure_employeers_with_edult_children form_Procedure_Employeers_With_Edult_Children = new Form_procedure_employeers_with_edult_children();
+            form_Procedure_Employeers_With_Edult_Children.Show();
+        }
+
+        private void giftvaluemoreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_procedure_gifts_value_more form_Procedure_Gifts_Value_More = new Form_procedure_gifts_value_more();
+            form_Procedure_Gifts_Value_More.Show();
+        }
+
     }
 }

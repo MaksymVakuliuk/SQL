@@ -60,7 +60,7 @@
             this.childrenOfEmployeersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giftsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Work_with_procedure = new System.Windows.Forms.ToolStripMenuItem();
-            this.childsWithGiftsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.childrenWithGiftsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeersWithAdultChildrenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeersWithChildrenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giftvaluemoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -353,7 +353,7 @@
             // Work_with_procedure
             // 
             this.Work_with_procedure.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.childsWithGiftsToolStripMenuItem,
+            this.childrenWithGiftsToolStripMenuItem,
             this.employeersWithAdultChildrenToolStripMenuItem,
             this.employeersWithChildrenToolStripMenuItem,
             this.giftvaluemoreToolStripMenuItem});
@@ -361,17 +361,19 @@
             this.Work_with_procedure.Size = new System.Drawing.Size(186, 24);
             this.Work_with_procedure.Text = "Работа с процедурами ";
             // 
-            // childsWithGiftsToolStripMenuItem
+            // childrenWithGiftsToolStripMenuItem
             // 
-            this.childsWithGiftsToolStripMenuItem.Name = "childsWithGiftsToolStripMenuItem";
-            this.childsWithGiftsToolStripMenuItem.Size = new System.Drawing.Size(296, 26);
-            this.childsWithGiftsToolStripMenuItem.Text = "children with gifts";
+            this.childrenWithGiftsToolStripMenuItem.Name = "childrenWithGiftsToolStripMenuItem";
+            this.childrenWithGiftsToolStripMenuItem.Size = new System.Drawing.Size(296, 26);
+            this.childrenWithGiftsToolStripMenuItem.Text = "children with gifts";
+            this.childrenWithGiftsToolStripMenuItem.Click += new System.EventHandler(this.childsWithGiftsToolStripMenuItem_Click);
             // 
             // employeersWithAdultChildrenToolStripMenuItem
             // 
             this.employeersWithAdultChildrenToolStripMenuItem.Name = "employeersWithAdultChildrenToolStripMenuItem";
             this.employeersWithAdultChildrenToolStripMenuItem.Size = new System.Drawing.Size(296, 26);
             this.employeersWithAdultChildrenToolStripMenuItem.Text = "employeers with adult children";
+            this.employeersWithAdultChildrenToolStripMenuItem.Click += new System.EventHandler(this.employeersWithAdultChildrenToolStripMenuItem_Click);
             // 
             // employeersWithChildrenToolStripMenuItem
             // 
@@ -385,6 +387,7 @@
             this.giftvaluemoreToolStripMenuItem.Name = "giftvaluemoreToolStripMenuItem";
             this.giftvaluemoreToolStripMenuItem.Size = new System.Drawing.Size(296, 26);
             this.giftvaluemoreToolStripMenuItem.Text = "gift value more";
+            this.giftvaluemoreToolStripMenuItem.Click += new System.EventHandler(this.giftvaluemoreToolStripMenuItem_Click);
             // 
             // fileSystemWatcher1
             // 
@@ -469,7 +472,7 @@
         private System.IO.FileSystemWatcher fileSystemWatcher3;
         private Gifts_for_children_of_employeesDataSetTableAdapters.ChildrenOfEmployeersTableAdapter childrenOfEmployeersTableAdapter;
         private System.Windows.Forms.ToolStripMenuItem Work_with_procedure;
-        private System.Windows.Forms.ToolStripMenuItem childsWithGiftsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem childrenWithGiftsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employeersWithAdultChildrenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employeersWithChildrenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem giftvaluemoreToolStripMenuItem;
