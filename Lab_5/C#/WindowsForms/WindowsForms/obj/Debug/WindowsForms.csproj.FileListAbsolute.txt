@@ -10,3 +10,4 @@ D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.c
 D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.exe
 D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.pdb
 D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.Form_Gifts_for_children_of_employeers_DB.resources
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.procedure_employeers_with_children.resources

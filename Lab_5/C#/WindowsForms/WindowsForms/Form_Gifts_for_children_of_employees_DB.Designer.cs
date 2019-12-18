@@ -59,6 +59,11 @@
             this.employeersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.childrenOfEmployeersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giftsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Work_with_procedure = new System.Windows.Forms.ToolStripMenuItem();
+            this.childsWithGiftsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.employeersWithAdultChildrenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.employeersWithChildrenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.giftvaluemoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.fileSystemWatcher2 = new System.IO.FileSystemWatcher();
             this.fileSystemWatcher3 = new System.IO.FileSystemWatcher();
@@ -98,7 +103,6 @@
             this.childrenOfEmployeers.RowTemplate.Height = 24;
             this.childrenOfEmployeers.Size = new System.Drawing.Size(936, 150);
             this.childrenOfEmployeers.TabIndex = 0;
-            this.childrenOfEmployeers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.childrenOfEmployeers_CellContentClick);
             // 
             // employeeIDDataGridViewTextBoxColumn
             // 
@@ -172,7 +176,6 @@
             this.employeers.RowTemplate.Height = 24;
             this.employeers.Size = new System.Drawing.Size(936, 160);
             this.employeers.TabIndex = 1;
-            this.employeers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.employeers_CellContentClick);
             // 
             // employeeIDDataGridViewTextBoxColumn1
             // 
@@ -308,10 +311,11 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.работаСТаблицамиToolStripMenuItem});
+            this.работаСТаблицамиToolStripMenuItem,
+            this.Work_with_procedure});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(966, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(966, 28);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -322,7 +326,7 @@
             this.childrenOfEmployeersToolStripMenuItem,
             this.giftsToolStripMenuItem});
             this.работаСТаблицамиToolStripMenuItem.Name = "работаСТаблицамиToolStripMenuItem";
-            this.работаСТаблицамиToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+            this.работаСТаблицамиToolStripMenuItem.Size = new System.Drawing.Size(163, 24);
             this.работаСТаблицамиToolStripMenuItem.Text = "Работа с таблицами";
             // 
             // employeersToolStripMenuItem
@@ -345,6 +349,42 @@
             this.giftsToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.giftsToolStripMenuItem.Text = "Gifts";
             this.giftsToolStripMenuItem.Click += new System.EventHandler(this.Open_Form_Gifts_Click);
+            // 
+            // Work_with_procedure
+            // 
+            this.Work_with_procedure.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.childsWithGiftsToolStripMenuItem,
+            this.employeersWithAdultChildrenToolStripMenuItem,
+            this.employeersWithChildrenToolStripMenuItem,
+            this.giftvaluemoreToolStripMenuItem});
+            this.Work_with_procedure.Name = "Work_with_procedure";
+            this.Work_with_procedure.Size = new System.Drawing.Size(186, 24);
+            this.Work_with_procedure.Text = "Работа с процедурами ";
+            // 
+            // childsWithGiftsToolStripMenuItem
+            // 
+            this.childsWithGiftsToolStripMenuItem.Name = "childsWithGiftsToolStripMenuItem";
+            this.childsWithGiftsToolStripMenuItem.Size = new System.Drawing.Size(296, 26);
+            this.childsWithGiftsToolStripMenuItem.Text = "children with gifts";
+            // 
+            // employeersWithAdultChildrenToolStripMenuItem
+            // 
+            this.employeersWithAdultChildrenToolStripMenuItem.Name = "employeersWithAdultChildrenToolStripMenuItem";
+            this.employeersWithAdultChildrenToolStripMenuItem.Size = new System.Drawing.Size(296, 26);
+            this.employeersWithAdultChildrenToolStripMenuItem.Text = "employeers with adult children";
+            // 
+            // employeersWithChildrenToolStripMenuItem
+            // 
+            this.employeersWithChildrenToolStripMenuItem.Name = "employeersWithChildrenToolStripMenuItem";
+            this.employeersWithChildrenToolStripMenuItem.Size = new System.Drawing.Size(296, 26);
+            this.employeersWithChildrenToolStripMenuItem.Text = "employeers with children";
+            this.employeersWithChildrenToolStripMenuItem.Click += new System.EventHandler(this.employeersWithChildrenToolStripMenuItem_Click);
+            // 
+            // giftvaluemoreToolStripMenuItem
+            // 
+            this.giftvaluemoreToolStripMenuItem.Name = "giftvaluemoreToolStripMenuItem";
+            this.giftvaluemoreToolStripMenuItem.Size = new System.Drawing.Size(296, 26);
+            this.giftvaluemoreToolStripMenuItem.Text = "gift value more";
             // 
             // fileSystemWatcher1
             // 
@@ -428,6 +468,11 @@
         private System.IO.FileSystemWatcher fileSystemWatcher2;
         private System.IO.FileSystemWatcher fileSystemWatcher3;
         private Gifts_for_children_of_employeesDataSetTableAdapters.ChildrenOfEmployeersTableAdapter childrenOfEmployeersTableAdapter;
+        private System.Windows.Forms.ToolStripMenuItem Work_with_procedure;
+        private System.Windows.Forms.ToolStripMenuItem childsWithGiftsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem employeersWithAdultChildrenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem employeersWithChildrenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem giftvaluemoreToolStripMenuItem;
     }
 }
 

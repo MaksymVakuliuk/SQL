@@ -28,11 +28,6 @@ namespace WindowsForms
             this.employeersTableAdapter.Fill(this.gifts_for_children_of_employeesDataSet.Employeers);
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void Open_Form_Employeers_Click(object sender, EventArgs e)
         {
             FormEmployeers formEmployeers = new FormEmployeers();
@@ -51,14 +46,10 @@ namespace WindowsForms
             formGifts.Show();
         }
 
-        private void employeers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void employeersWithChildrenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void childrenOfEmployeers_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            procedure_employeers_with_children procedure_Employeers_With_Children = new procedure_employeers_with_children();
+            procedure_Employeers_With_Children.Show();
         }
     }
 }
