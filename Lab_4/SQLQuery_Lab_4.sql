@@ -31,14 +31,14 @@ EXEC children_with_gifts
 DROP PROCEDURE employeers_with_adult_cildren
 
 GO
-CREATE PROCEDURE employeers_with_adult_cildren AS
+CREATE PROCEDURE employeers_with_adult_children AS
 BEGIN
 	SELECT Employeers.FirstName, Employeers.LastName FROM Employeers LEFT JOIN ChildrenOfEmployeers AS COE
 	ON COE.Employee_ID = Employeers.Employee_ID
 	WHERE DATEDIFF(YEAR, COE.Date_of_birth, GetDate()) > 18
 END
 
-EXEC employeers_with_adult_cildren
+EXEC employeers_with_adult_children
 
 --4.	Вивести інформацію о подарунках з вартістю більше вказаного числа, відсортованих по даті.
 
