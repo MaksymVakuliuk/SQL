@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.valueLabel = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Fulfill_the_request_button = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.sqlSelectCommand1 = new System.Data.SqlClient.SqlCommand();
+            this.sqlConnection1 = new System.Data.SqlClient.SqlConnection();
             this.sqlInsertCommand1 = new System.Data.SqlClient.SqlCommand();
             this.sqlDataAdapter1 = new System.Data.SqlClient.SqlDataAdapter();
-            this.sqlConnection1 = new System.Data.SqlClient.SqlConnection();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // valueLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.valueLabel.AutoSize = true;
+            this.valueLabel.Location = new System.Drawing.Point(12, 12);
+            this.valueLabel.Name = "valueLabel";
+            this.valueLabel.Size = new System.Drawing.Size(44, 17);
+            this.valueLabel.TabIndex = 0;
+            this.valueLabel.Text = "Value";
             // 
             // textBox1
             // 
@@ -90,6 +90,12 @@
             new System.Data.SqlClient.SqlParameter("@RETURN_VALUE", System.Data.SqlDbType.Int, 4, System.Data.ParameterDirection.ReturnValue, false, ((byte)(0)), ((byte)(0)), "", System.Data.DataRowVersion.Current, null),
             new System.Data.SqlClient.SqlParameter("@Value", System.Data.SqlDbType.Int, 4)});
             // 
+            // sqlConnection1
+            // 
+            this.sqlConnection1.ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Gifts_for_children_of_employees;" +
+    "Integrated Security=True";
+            this.sqlConnection1.FireInfoMessageEventOnUserErrors = false;
+            // 
             // sqlInsertCommand1
             // 
             this.sqlInsertCommand1.CommandText = "dbo.gifts_value_more";
@@ -110,12 +116,6 @@
                         new System.Data.Common.DataColumnMapping("Date_of_issue", "Date_of_issue"),
                         new System.Data.Common.DataColumnMapping("Number_of_issue", "Number_of_issue")})});
             // 
-            // sqlConnection1
-            // 
-            this.sqlConnection1.ConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Gifts_for_children_of_employees;" +
-    "Integrated Security=True";
-            this.sqlConnection1.FireInfoMessageEventOnUserErrors = false;
-            // 
             // Form_procedure_gifts_value_more
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -124,7 +124,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Fulfill_the_request_button);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.valueLabel);
             this.Name = "Form_procedure_gifts_value_more";
             this.Text = "Form_procedure_gifts_value_more";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -135,7 +135,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label valueLabel;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button Fulfill_the_request_button;
         private System.Windows.Forms.DataGridView dataGridView1;

@@ -14,3 +14,4 @@ D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.F
 D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.Form_procedure_employeers_with_edult_children.resources
 D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.Form_procedure_children_with_gift.resources
 D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.Form_procedure_gifts_value_more.resources
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Debug\WindowsForms.FormAdministrationPanel.resources

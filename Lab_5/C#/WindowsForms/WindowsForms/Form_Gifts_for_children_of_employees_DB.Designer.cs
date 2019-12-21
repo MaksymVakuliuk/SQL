@@ -64,6 +64,7 @@
             this.employeersWithAdultChildrenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeersWithChildrenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giftvaluemoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.администрированиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.fileSystemWatcher2 = new System.IO.FileSystemWatcher();
             this.fileSystemWatcher3 = new System.IO.FileSystemWatcher();
@@ -312,7 +313,8 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.работаСТаблицамиToolStripMenuItem,
-            this.Work_with_procedure});
+            this.Work_with_procedure,
+            this.администрированиеToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(966, 28);
@@ -388,6 +390,13 @@
             this.giftvaluemoreToolStripMenuItem.Size = new System.Drawing.Size(296, 26);
             this.giftvaluemoreToolStripMenuItem.Text = "gift value more";
             this.giftvaluemoreToolStripMenuItem.Click += new System.EventHandler(this.giftvaluemoreToolStripMenuItem_Click);
+            // 
+            // администрированиеToolStripMenuItem
+            // 
+            this.администрированиеToolStripMenuItem.Name = "администрированиеToolStripMenuItem";
+            this.администрированиеToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.администрированиеToolStripMenuItem.Text = "Администрирование";
+            this.администрированиеToolStripMenuItem.Click += new System.EventHandler(this.администрированиеToolStripMenuItem_Click);
             // 
             // fileSystemWatcher1
             // 
@@ -476,6 +485,7 @@
         private System.Windows.Forms.ToolStripMenuItem employeersWithAdultChildrenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employeersWithChildrenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem giftvaluemoreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem администрированиеToolStripMenuItem;
     }
 }
 

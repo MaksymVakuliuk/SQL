@@ -1,0 +1,16 @@
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\bin\Release\WindowsForms.exe.config
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\bin\Release\WindowsForms.exe
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\bin\Release\WindowsForms.pdb
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Release\WindowsForms.FormAdministrationPanel.resources
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Release\WindowsForms.FormChildrenOfEmployers.resources
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Release\WindowsForms.FormEmployeers.resources
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Release\WindowsForms.FormGifts.resources
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Release\WindowsForms.Form_Gifts_for_children_of_employeers_DB.resources
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Release\WindowsForms.Form_procedure_children_with_gift.resources
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Release\WindowsForms.Form_procedure_employeers_with_children.resources
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Release\WindowsForms.Form_procedure_employeers_with_edult_children.resources
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Release\WindowsForms.Form_procedure_gifts_value_more.resources
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Release\WindowsForms.Properties.Resources.resources
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Release\WindowsForms.csproj.GenerateResource.cache
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Release\WindowsForms.exe
+D:\Programming\MSSQL\Lab_5\C#\WindowsForms\WindowsForms\obj\Release\WindowsForms.pdb

@@ -63,5 +63,10 @@ namespace WindowsForms
             form_Procedure_Gifts_Value_More.Show();
         }
 
+        private void администрированиеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAdministrationPanel formAdministrationPanel = new FormAdministrationPanel();
+            formAdministrationPanel.Show();
+        }
     }
 }

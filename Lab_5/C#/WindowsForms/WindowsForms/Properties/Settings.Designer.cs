@@ -33,5 +33,16 @@ namespace WindowsForms.Properties {
                 return ((string)(this["Gifts_for_children_of_employeesConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost\\SQLEXPRESS;Initial Catalog=DB_Drugs;Integrated Security=Tru" +
+            "e")]
+        public string DB_DrugsConnectionString {
+            get {
+                return ((string)(this["DB_DrugsConnectionString"]));
+            }
+        }
     }
 }
